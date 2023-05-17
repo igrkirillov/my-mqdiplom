@@ -88,6 +88,60 @@ body {
     .title-span {
         display: block;
     }
+
+    .trends {
+        width: 100%;
+    }
+
+    .trends-title {
+        display: flex;
+        margin-top: 35px;
+        margin-bottom: 35px;
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .trends-title:after {
+        content: "";
+        margin-top: 14px;
+        height: 3px;
+        width: 66px;
+        background-color: #e1d9bd;
+    }
+
+    .trend {
+        height: 230px;
+        position: relative;
+    }
+
+    .trend-image {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .trend-info {
+        border: rgba(181,159,91,0.6) solid 3px;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        box-sizing: border-box;
+        height: 126px;
+        margin: 88px 15px 15px 15px;
+    }
 }
 
 .menu {
