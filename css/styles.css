@@ -62,8 +62,60 @@ body {
     z-index: -1;
 }
 
+.title {
+    display: block;
+    align-self: center;
+}
+
 .logo-image {
     display: block;
+}
+
+.menu {
+    width: 100%;
+    padding: 0 calc(var(--page-padding));
+    display: flex;
+}
+
+.menu_list {
+    display: flex;
+    align-items: center;
+}
+
+.menu_item {
+    list-style-type: none;
+}
+
+.menu_item:nth-child(n+1) {
+    margin-left: 15px;
+}
+
+.menu_link {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu_link:hover {
+    text-decoration: underline;
+}
+
+.burger {
+    align-self: center;
+}
+
+.burger-line {
+    width: 23px;
+    height: 2px;
+    background-color: white;
+}
+
+.burger-line:nth-child(n+2) {
+    margin-top: 3px;
+}
+
+.burger-line:nth-child(-n+2) {
+    margin-bottom: 3px;
 }
 
 .title {
@@ -75,10 +127,6 @@ body {
 
 .title-span {
     display: block;
-}
-
-.mobile, .tablet, .desktop {
-    display: none;
 }
 
 .trends {
@@ -871,8 +919,13 @@ body {
 
 /* mobile first */
 @media (max-width: 640px) {
-    .mobile {
-        display: block;
+    .tablet, .desktop {
+        display: none;
+    }
+
+    .menu {
+        margin-top: 32px;
+        justify-content: end;
     }
 
     .header {
@@ -886,10 +939,14 @@ body {
         background-image: url("../images/banner-mobile.jpg");
     }
 
+    .logo-image-link {
+        margin: 224px auto 0 auto;
+    }
+
     .logo-image {
+        margin-top: 170px;
         display: block;
         width: 163px;
-        margin: 224px auto 0 auto;
     }
 
     .title {
@@ -929,8 +986,12 @@ body {
 
 /* tablet */
 @media (min-width: 641px) and (max-width: 1199px) {
-    .tablet {
-        display: block;
+    .mobile, .desktop {
+        display: none;
+    }
+
+    :root {
+        --page-padding: 34px;
     }
 
     .header {
@@ -944,9 +1005,21 @@ body {
         background-image: url("../images/banner-bg-tablet.jpg");
     }
 
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .logo-image {
         width: 158px;
-        margin: 46px 0 0 34px;
+    }
+
+    .logo-image-link {
+    }
+
+    .menu {
+        margin-top: 46px;
     }
 
     .title {
@@ -1014,11 +1087,11 @@ body {
 
 /* desktop */
 @media (min-width: 1200px) {
-    .desktop {
-        display: block;
+    .mobile, .tablet {
+        display: none;
     }
 
-    root {
+    :root {
         --page-padding: 15px;
     }
 
@@ -1033,9 +1106,20 @@ body {
         background-image: url("../images/banner-bg.jpg");
     }
 
+    .menu {
+        padding: 0 calc(var(--page-padding));
+        margin-top: 27px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .logo-image {
         width: 182px;
-        margin: 27px 0 0 calc(var(--page-padding));
+    }
+
+    .logo-image-link {
+
     }
 
     .title {
