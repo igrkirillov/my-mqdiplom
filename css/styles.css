@@ -696,7 +696,8 @@ body {
 }
 
 .shop-item {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 0 calc(var(--page-padding)) 0 calc(var(--page-padding));
     position: relative;
 }
@@ -723,12 +724,12 @@ body {
 }
 
 .shop-item-text {
-    height: 260px;
     position: relative;
     z-index: 2;
     margin-top: -28px;
     padding: 0 20px;
     border: rgba(181,159,91,0.6) solid 3px;
+    flex-grow: 1;
 }
 
 .shop-item-title {
@@ -1098,6 +1099,12 @@ body {
 
     .shop-item:nth-child(-n + 2) {
         padding-right: 32px;
+    }
+
+    .shop-item-image {
+        width: 298px;
+        height: 204px;
+        object-fit: cover;
     }
 
     .footer {
