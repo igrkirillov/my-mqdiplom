@@ -873,14 +873,3 @@ body {
 
     /*footer end*/
 }
-
-@media (max-width: 640px) and (orientation:landscape) {
-    .trends {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .trend {
-        width: 50%;
-    }
-}
