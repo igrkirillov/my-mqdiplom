@@ -827,7 +827,7 @@ body {
     }
 
     .social-items {
-        padding: 30px calc(var(--page-padding)) 30px calc(var(--page-padding));
+        padding: 30px calc(var(--page-padding));
         margin: 0 auto;
         display: flex;
         justify-content: center;
