@@ -21,6 +21,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -246,7 +247,7 @@ body {
 
     .post-text {
         padding: 2px 0;
-        width: 367px;
+        width: 100%;
     }
 
     .post-tags {
@@ -320,10 +321,6 @@ body {
 
     .sidebar {
         margin-top: 44px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
     }
 
     .sidebar > section:nth-of-type(n+2) {
@@ -333,7 +330,7 @@ body {
     /*news start*/
 
     .news {
-        padding: 0 1px;
+        padding: 0 calc(var(--page-padding));
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -470,7 +467,7 @@ body {
     /*subscription start*/
 
     .subscription {
-        padding: 0 1px;
+        padding: 0 calc(var(--page-padding));
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -544,7 +541,7 @@ body {
 
     .tags {
         max-width: 100%;
-        padding: 0 1px;
+        padding: 0 calc(var(--page-padding));
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -575,8 +572,8 @@ body {
     }
 
     .tag {
-        padding: 0 14px;
-        margin-left: 5px;
+        padding: 0 12px;
+        margin-left: 4px;
         height: 30px;
         display: flex;
         align-items: center;
@@ -585,11 +582,11 @@ body {
         text-transform: uppercase;
     }
 
-    .tag:nth-of-type(3n+1) {
+    .tag:nth-of-type(4n+1) {
         margin-left: 0;
     }
 
-    .tag:nth-of-type(n+4) {
+    .tag:nth-of-type(n+5) {
         margin-top: 6px;
     }
 
@@ -610,7 +607,7 @@ body {
     /*themes start*/
 
     .themes {
-        padding: 0 1px;
+        padding: 0 calc(var(--page-padding));
         width: 100%;
         display: flex;
         flex-direction: column;
