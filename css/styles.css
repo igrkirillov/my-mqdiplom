@@ -221,6 +221,8 @@ body {
     }
 
     .post-image-container {
+        position: relative;
+        z-index: 1;
         display: block;
     }
 
@@ -229,8 +231,17 @@ body {
     }
 
     .post-image {
-        min-width: 380px;
-        max-width: 380px;
+        width: 100%;
+    }
+
+    .post-image-link {
+        display: block;
+        width: 100%;
+    }
+
+    .post-picture {
+        display: block;
+        width: 100%;
     }
 
     .post-text {
