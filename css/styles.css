@@ -144,8 +144,8 @@ body {
     }
 
     .trend {
-        height: 230px;
         position: relative;
+        height: 232px;
     }
 
     .trend:nth-child(n+1) {
@@ -161,8 +161,8 @@ body {
         bottom: 0;
         left: 0;
         box-sizing: border-box;
-        height: 126px;
-        margin: 88px calc(var(--page-padding)) 15px calc(var(--page-padding));
+        margin: 66px 0 18px 0;
+        padding: 0 calc(var(--page-padding));
     }
 
     .trend-tags {
@@ -872,4 +872,15 @@ body {
     }
 
     /*footer end*/
+}
+
+@media (max-width: 640px) and (orientation:landscape) {
+    .trends {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .trend {
+        width: 50%;
+    }
 }
