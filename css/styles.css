@@ -1376,6 +1376,18 @@ body {
         margin-top: 50px;
     }
 
+    .post {
+        display: flex;
+    }
+
+    .post-image {
+        width: 31.7vw; /*380px при vw 1200px*/
+    }
+
+    .post-text {
+        margin-left: 2.5vw; /*30px при vw 1200px*/
+    }
+
     .shop-items {
         margin-top: 50px;
     }
