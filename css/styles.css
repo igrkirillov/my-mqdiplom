@@ -915,11 +915,13 @@ body {
     text-decoration: none;
 }
 
-/*footer end*/
+/* footer end */
 
 body {
     position: relative;
 }
+
+/* popup start */
 
 .popup-container {
     display: flex;
@@ -959,7 +961,6 @@ body {
     margin-bottom: 35px;
     flex-direction: column;
     align-items: center;
-    font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -982,7 +983,8 @@ body {
     background-size: contain;
     border: none;
     align-self: end;
-    margin: 24px var(--page-padding) 5px var(--page-padding);
+    margin-left: var(--page-padding);
+    margin-right: var(--page-padding);
 }
 
 .feedback-input-row {
@@ -1094,10 +1096,25 @@ body {
     margin-top: 26px;
 }
 
+/* popup end */
+
 /* mobile first */
 @media (max-width: 640px) {
     .tablet, .desktop {
         display: none;
+    }
+
+    :root {
+        --page-padding: 15px;
+    }
+
+    .popup-close {
+        margin-top: 24px;
+        margin-bottom: 5px;
+    }
+
+    .popup-title {
+        font-size: 16px;
     }
 
     .menu {
@@ -1169,6 +1186,15 @@ body {
 
     :root {
         --page-padding: 34px;
+    }
+
+    .popup-close {
+        margin-top: 200px;
+        margin-bottom: 7px;
+    }
+
+    .popup-title {
+        font-size: 18px;
     }
 
     .header {
@@ -1270,6 +1296,15 @@ body {
 
     :root {
         --page-padding: 15px;
+    }
+
+    .popup-close {
+        margin-top: 210px;
+        margin-bottom: 7px;
+    }
+
+    .popup-title {
+        font-size: 20px;
     }
 
     .header {
