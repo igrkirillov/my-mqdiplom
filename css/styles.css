@@ -86,7 +86,7 @@ body {
     list-style-type: none;
 }
 
-.menu_item:nth-child(n+1) {
+.menu_item:nth-child(n + 2) {
     margin-left: 15px;
 }
 
@@ -1119,7 +1119,7 @@ body {
 
     .menu {
         margin-top: 32px;
-        justify-content: end;
+        justify-content: space-between;
     }
 
     .header {
