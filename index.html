@@ -664,5 +664,42 @@
         </div>
     </footer>
 
+    <div class="popup-container">
+        <button class="popup-close"></button>
+        <div class="popup">
+            <header>
+                <h5 class="popup-title">
+                    Ваш фидбек
+                </h5>
+            </header>
+            <form action="#" class="feedback-form">
+                <div class="feedback-input-row">
+                    <label for="frequency" class="feedback-input-title">Как часто вы заходите на сайт?</label>
+                    <select id="frequency" required class="frequency-select">
+                        <option value="1" selected>Почти каждый день</option>
+                        <option value="2">Раз в день</option>
+                    </select>
+                </div>
+                <div class="feedback-input-row">
+                    <label class="feedback-input-title">Вы подписаны на email рассылку?</label>
+                    <div class="subscription-input-container">
+                        <div class="subscription-input">
+                            <input id="yes" type="radio" name="subscription" value="yes" class="subscription-radio">
+                            <label for="yes">Да</label>
+                        </div>
+                        <div class="subscription-input">
+                            <input id="no" type="radio" name="subscription" value="no" class="subscription-radio">
+                            <label for="no">Нет</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback-input-row">
+                    <label for="wishes" class="feedback-input-title">Расскажите, какой контент вы бы хотели видеть на нашем сайте?</label>
+                    <textarea id="wishes" class="wishes-textarea">Может, больше рецептов?</textarea>
+                </div>
+                <button id="feedback-submit" type="submit" value=""  class="feedback-submit">Отправить</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
