@@ -1101,10 +1101,6 @@ body {
 
 /* mobile first */
 @media (max-width: 640px) {
-    .tablet, .desktop {
-        display: none;
-    }
-
     :root {
         --page-padding: 15px;
     }
@@ -1198,10 +1194,6 @@ body {
 
 /* tablet */
 @media (min-width: 641px) and (max-width: 1199px) {
-    .mobile, .desktop {
-        display: none;
-    }
-
     :root {
         --page-padding: 34px;
     }
@@ -1234,6 +1226,10 @@ body {
 
     .logo-image {
         width: 158px;
+    }
+
+    .logo-image-mobile {
+        display: none;
     }
 
     .logo-image-link {
@@ -1330,10 +1326,6 @@ body {
 
 /* desktop */
 @media (min-width: 1200px) {
-    .mobile, .tablet {
-        display: none;
-    }
-
     :root {
         --page-padding: 15px;
         --desktop-width: 1200px;
@@ -1375,8 +1367,8 @@ body {
         width: 182px;
     }
 
-    .logo-image-link {
-
+    .logo-image-mobile {
+        display: none;
     }
 
     .title {
