@@ -269,7 +269,6 @@ body {
 
 .post {
     display: block;
-    padding: 0 15px 0 15px;
 }
 
 .post-image-container {
@@ -384,7 +383,6 @@ body {
 /*news start*/
 
 .news {
-    padding: 0 calc(var(--page-padding));
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -522,7 +520,6 @@ body {
 /*subscription start*/
 
 .subscription {
-    padding: 0 calc(var(--page-padding));
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -597,7 +594,6 @@ body {
 
 .tags {
     max-width: 100%;
-    padding: 0 calc(var(--page-padding));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -656,7 +652,6 @@ body {
 /*themes start*/
 
 .themes {
-    padding: 0 calc(var(--page-padding));
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1284,6 +1279,7 @@ body {
     }
 
     .posts-sidebar {
+        width: 100%;
         display: flex;
         justify-content: space-between;
         margin-top: 50px;
@@ -1300,6 +1296,10 @@ body {
 
     .post-image {
         width: 390px;
+    }
+
+    .post-text {
+        width: 350px;
     }
 
     .shop-items {
@@ -1413,6 +1413,9 @@ body {
         display: flex;
         justify-content: space-between;
         margin-top: 50px;
+        margin-left: calc(var(--page-padding));
+        margin-right: calc(var(--page-padding));
+        align-self: stretch;
     }
 
     .sidebar {
@@ -1438,6 +1441,7 @@ body {
 
     .post-text {
         margin-left: 30px;
+        width: 350px;
     }
 
     .shop-items {
