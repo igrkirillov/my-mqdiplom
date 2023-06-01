@@ -736,10 +736,13 @@ body {
     background-color: #e1d9bd;
 }
 
+.shop-items-container {
+    margin: 0 calc(var(--page-padding)) 0 calc(var(--page-padding));
+}
+
 .shop-item {
     display: flex;
     flex-direction: column;
-    padding: 0 calc(var(--page-padding)) 0 calc(var(--page-padding));
     position: relative;
 }
 
@@ -810,12 +813,8 @@ body {
 
 .shop-link-container {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     padding: 26px 0;
-}
-
-.shop-price-container {
-    width: 50%;
 }
 
 .old-price {
@@ -831,10 +830,6 @@ body {
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
-}
-
-.shop-button-container {
-    width: 50%;
 }
 
 .shop-button {
@@ -860,7 +855,8 @@ body {
 
 .footer {
     width: 100%;
-    align-self: center;
+    margin-left: calc(var(--page-padding));
+    margin-right: calc(var(--page-padding));
 }
 
 .social-items {
@@ -884,15 +880,15 @@ body {
 }
 
 .social-link-dribble {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg");
+    background-image: url("../svg/001-dribbble.svg");
 }
 
 .social-link-pinterest {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/002-pinterest.svg");
+    background-image: url("../svg/002-pinterest.svg");
 }
 
 .social-link-tumblr {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
+    background-image: url("../svg/003-tumblr.svg");
 }
 
 .copyright {
@@ -1220,10 +1216,6 @@ body {
         width: 158px;
     }
 
-    .logo-image-mobile {
-        display: none;
-    }
-
     .logo-image-link {
     }
 
@@ -1364,10 +1356,6 @@ body {
         width: 182px;
     }
 
-    .logo-image-mobile {
-        display: none;
-    }
-
     .title {
         width: 700px;
         margin-top: 124px;
@@ -1406,13 +1394,13 @@ body {
     }
 
     .posts-sidebar {
+        width: 100%;
         max-width: calc(var(--desktop-width));
         display: flex;
         justify-content: space-between;
         margin-top: 50px;
         margin-left: calc(var(--page-padding));
         margin-right: calc(var(--page-padding));
-        align-self: stretch;
     }
 
     .sidebar {
@@ -1443,7 +1431,7 @@ body {
 
     .shop-items {
         margin-top: 50px;
-        width: calc(var(--desktop-width));
+        max-width: calc(var(--desktop-width));
     }
 
     .shop-items-container {
@@ -1452,7 +1440,7 @@ body {
     }
 
     .shop-item {
-        width: 33%;
+        width: 33.3333%;
     }
 
     .shop-item:nth-child(n+2) {
@@ -1464,12 +1452,12 @@ body {
     }
 
     .shop-item-image {
-        width: 298px;
         height: 204px;
         object-fit: cover;
     }
 
     .footer {
+        max-width: calc(var(--desktop-width));
         margin-top: 50px;
     }
 }
