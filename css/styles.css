@@ -72,6 +72,10 @@ body {
 
 .menu {
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: calc(var(--page-padding));
+    padding-right: calc(var(--page-padding));
 }
 
 .menu_list {
@@ -1141,6 +1145,11 @@ body {
         width: 163px;
     }
 
+    .logo-image-mobile {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .title {
         width: 285px;
         margin-top: 40px;
@@ -1225,9 +1234,9 @@ body {
 
     .menu {
         margin-top: 46px;
-        display: flex;
         justify-content: space-between;
         align-items: center;
+        box-sizing: border-box;
     }
 
     .logo-image {
