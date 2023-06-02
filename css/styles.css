@@ -1299,6 +1299,10 @@ body {
         margin-right: calc(var(--page-padding));
     }
 
+    .posts {
+        width: 50.78vw; /*390px при ширине экрана 768*/
+    }
+
     .sidebar {
         min-width: 272px;
         max-width: 272px;
@@ -1306,10 +1310,6 @@ body {
 
     .post:nth-child(n+2) {
         margin-top: 40px;
-    }
-
-    .post-image {
-        width: 390px;
     }
 
     .post-text {
@@ -1440,6 +1440,10 @@ body {
         margin-right: auto;
     }
 
+    .posts {
+        width: 31.67vw; /* 380px при ширине экрана 1200px */
+    }
+
     .sidebar {
         min-width: 272px;
         max-width: 272px;
@@ -1455,10 +1459,6 @@ body {
 
     .post:nth-child(n+2) {
         margin-top: 58px;
-    }
-
-    .post-image {
-        width: 380px;
     }
 
     .post-text {
