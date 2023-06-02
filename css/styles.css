@@ -45,8 +45,6 @@ body {
 .header {
     position: relative;
     width: 100%;
-    padding-top: 1px;
-    margin-top: -1px;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -1114,7 +1112,6 @@ body {
     }
 
     .menu {
-        margin-top: 32px;
         justify-content: space-between;
     }
 
@@ -1123,6 +1120,7 @@ body {
     }
 
     .header {
+        padding-top: 32px;
         flex-direction: column;
         justify-content: start;
         align-items: center;
@@ -1228,6 +1226,7 @@ body {
 
     .header {
         min-height: 392px;
+        padding-top: 46px;
     }
 
     .header:before {
@@ -1235,7 +1234,6 @@ body {
     }
 
     .menu {
-        margin-top: 46px;
         justify-content: space-between;
         align-items: center;
         box-sizing: border-box;
@@ -1366,6 +1364,7 @@ body {
 
     .header {
         min-height: 440px;
+        padding-top: 25px;
     }
 
     .header:before {
@@ -1374,7 +1373,6 @@ body {
 
     .menu {
         max-width: calc(var(--desktop-width));
-        margin-top: 25px;
         display: flex;
         justify-content: space-between;
         align-items: center;
