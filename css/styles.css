@@ -28,7 +28,7 @@ body {
     font-family: OpenSans, Areal, sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
 }
 
 .hidden {
@@ -44,7 +44,6 @@ body {
 
 .header {
     position: relative;
-    align-self: stretch;
     width: 100%;
     display: flex;
     align-items: center;
@@ -73,9 +72,10 @@ body {
 }
 
 .menu {
-    width: 100%;
-    padding: 0 calc(var(--page-padding));
     display: flex;
+    margin-left: calc(var(--page-padding));
+    margin-right: calc(var(--page-padding));
+    align-self: stretch;
 }
 
 .menu_list {
@@ -124,10 +124,6 @@ body {
     color: white;
     text-align: center;
     text-transform: uppercase;
-}
-
-.trends {
-    align-self: stretch;
 }
 
 .trends-title {
@@ -855,8 +851,6 @@ body {
 
 .footer {
     width: 100%;
-    margin-left: calc(var(--page-padding));
-    margin-right: calc(var(--page-padding));
 }
 
 .address {
@@ -1236,7 +1230,8 @@ body {
         width: 158px;
     }
 
-    .logo-image-link {
+    .logo-image-mobile {
+        display: none;
     }
 
     .menu {
@@ -1288,10 +1283,11 @@ body {
     }
 
     .posts-sidebar {
-        width: 100%;
         display: flex;
         justify-content: space-between;
         margin-top: 50px;
+        margin-left: calc(var(--page-padding));
+        margin-right: calc(var(--page-padding));
     }
 
     .sidebar {
@@ -1321,7 +1317,15 @@ body {
     }
 
     .shop-item {
-        width: 50%;
+        width: calc(50% - 10px);
+    }
+
+    .shop-item:nth-child(odd) {
+        margin-right: 10px;
+    }
+
+    .shop-item:nth-child(even) {
+        margin-left: 10px;
     }
 
     .shop-item:nth-child(n+3) {
@@ -1360,8 +1364,7 @@ body {
     }
 
     .menu {
-        padding: 0 calc(var(--page-padding));
-        width: calc(var(--desktop-width));
+        max-width: calc(var(--desktop-width));
         margin-top: 27px;
         display: flex;
         justify-content: space-between;
@@ -1374,6 +1377,10 @@ body {
 
     .logo-image {
         width: 182px;
+    }
+
+    .logo-image-mobile {
+        display: none;
     }
 
     .title {
@@ -1414,7 +1421,6 @@ body {
     }
 
     .posts-sidebar {
-        width: 100%;
         max-width: calc(var(--desktop-width));
         display: flex;
         justify-content: space-between;
@@ -1450,8 +1456,8 @@ body {
     }
 
     .shop-items {
-        margin-top: 50px;
         max-width: calc(var(--desktop-width));
+        margin-top: 50px;
     }
 
     .shop-items-container {
