@@ -26,9 +26,9 @@
 
 body {
     font-family: OpenSans, Areal, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: stretch;*/
 }
 
 .hidden {
@@ -45,8 +45,6 @@ body {
 .header {
     position: relative;
     width: 100%;
-    display: flex;
-    align-items: center;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -64,7 +62,8 @@ body {
 
 .title {
     display: block;
-    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .logo-image {
@@ -73,9 +72,6 @@ body {
 
 .menu {
     display: flex;
-    margin-left: calc(var(--page-padding));
-    margin-right: calc(var(--page-padding));
-    align-self: stretch;
 }
 
 .menu_list {
@@ -124,6 +120,10 @@ body {
     color: white;
     text-align: center;
     text-transform: uppercase;
+}
+
+.trends {
+    width: 100%;
 }
 
 .trends-title {
@@ -711,6 +711,10 @@ body {
 
 .shop-items {
     width: 100%;
+    padding-left: calc(var(--page-padding));
+    padding-right: calc(var(--page-padding));
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .shop-items-title {
@@ -851,11 +855,13 @@ body {
 
 .footer {
     width: 100%;
+    padding-left: calc(var(--page-padding));
+    padding-right: calc(var(--page-padding));
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .address {
-    margin-left: calc(var(--page-padding));
-    margin-right: calc(var(--page-padding));
 }
 
 .social-items {
@@ -1210,9 +1216,6 @@ body {
     }
 
     .header {
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
         min-height: 392px;
     }
 
@@ -1221,6 +1224,7 @@ body {
     }
 
     .menu {
+        margin-top: 46px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -1232,10 +1236,6 @@ body {
 
     .logo-image-mobile {
         display: none;
-    }
-
-    .menu {
-        margin-top: 46px;
     }
 
     .menu_list {
@@ -1354,8 +1354,6 @@ body {
     }
 
     .header {
-        flex-direction: column;
-        justify-content: start;
         min-height: 440px;
     }
 
@@ -1365,10 +1363,11 @@ body {
 
     .menu {
         max-width: calc(var(--desktop-width));
-        margin-top: 27px;
+        margin-top: 207px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
     }
 
     .burger {
@@ -1425,8 +1424,11 @@ body {
         display: flex;
         justify-content: space-between;
         margin-top: 50px;
-        margin-left: calc(var(--page-padding));
-        margin-right: calc(var(--page-padding));
+        padding-left: calc(var(--page-padding));
+        padding-right: calc(var(--page-padding));
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .sidebar {
@@ -1463,6 +1465,8 @@ body {
     .shop-items-container {
         display: flex;
         flex-wrap: wrap;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .shop-item {
