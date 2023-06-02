@@ -45,6 +45,8 @@ body {
 .header {
     position: relative;
     width: 100%;
+    padding-top: 1px;
+    margin-top: -1px;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -1372,7 +1374,7 @@ body {
 
     .menu {
         max-width: calc(var(--desktop-width));
-        margin-top: 207px;
+        margin-top: 25px;
         display: flex;
         justify-content: space-between;
         align-items: center;
