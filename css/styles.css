@@ -1313,7 +1313,7 @@ body {
     }
 
     .post-text {
-        width: 350px;
+        width: 100%;
     }
 
     .shop-items {
@@ -1440,8 +1440,8 @@ body {
         margin-right: auto;
     }
 
-    .posts {
-        width: 31.67vw; /* 380px при ширине экрана 1200px */
+    .post-image {
+        width: 380px;
     }
 
     .sidebar {
