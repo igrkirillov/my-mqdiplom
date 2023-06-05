@@ -16,6 +16,7 @@
 
 :root {
     --page-padding: 15px;
+    --header-margin-top: 25px;
 }
 
 * {
@@ -68,6 +69,7 @@ body {
 
 .logo-image {
     display: block;
+    margin-top: calc(var(--header-margin-top));
 }
 
 .menu {
@@ -80,6 +82,7 @@ body {
 
 .menu_list {
     display: flex;
+    margin-top: calc(var(--header-margin-top));
     align-items: center;
 }
 
@@ -102,6 +105,7 @@ body {
 }
 
 .burger {
+    margin-top: calc(var(--header-margin-top));
     align-self: center;
 }
 
@@ -128,12 +132,15 @@ body {
 
 .trends {
     width: 100%;
+    margin-top: 35px;
+}
+
+.trends-container {
+    margin-top: 35px;
 }
 
 .trends-title {
     display: flex;
-    margin-top: 35px;
-    margin-bottom: 35px;
     flex-direction: column;
     align-items: center;
     font-weight: 700;
@@ -740,10 +747,6 @@ body {
     background-color: #e1d9bd;
 }
 
-.shop-items-container {
-    margin: 0 calc(var(--page-padding)) 0 calc(var(--page-padding));
-}
-
 .shop-item {
     display: flex;
     flex-direction: column;
@@ -781,7 +784,7 @@ body {
 }
 
 .shop-item-title {
-    padding-top: calc(28px + 24px);
+    margin-top: calc(28px + 24px);
     font-size: 20px;
     font-weight: 700;
     text-align: left;
@@ -1100,6 +1103,7 @@ body {
 @media (max-width: 640px) {
     :root {
         --page-padding: 15px;
+        --header-margin-top: 32px;
     }
 
     .popup-close {
@@ -1120,7 +1124,6 @@ body {
     }
 
     .header {
-        padding-top: 32px;
         flex-direction: column;
         justify-content: start;
         align-items: center;
@@ -1178,14 +1181,9 @@ body {
         font-size: 20px;
     }
 
-    .post {
-        margin-left: calc(var(--page-padding));
-        margin-right: calc(var(--page-padding));
-    }
-
-    .sidebar {
-        margin-left: calc(var(--page-padding));
-        margin-right: calc(var(--page-padding));
+    .posts-sidebar {
+        padding-left: calc(var(--page-padding));
+        padding-right: calc(var(--page-padding));
     }
 
     .post:nth-child(n+2) {
@@ -1213,6 +1211,7 @@ body {
 @media (min-width: 641px) and (max-width: 1199px) {
     :root {
         --page-padding: 34px;
+        --header-margin-top: 46px;
     }
 
     .popup-close {
@@ -1226,7 +1225,6 @@ body {
 
     .header {
         min-height: 392px;
-        padding-top: 46px;
     }
 
     .header:before {
@@ -1235,7 +1233,6 @@ body {
 
     .menu {
         justify-content: space-between;
-        align-items: center;
         box-sizing: border-box;
     }
 
@@ -1295,12 +1292,13 @@ body {
         display: flex;
         justify-content: space-between;
         margin-top: 50px;
-        margin-left: calc(var(--page-padding));
-        margin-right: calc(var(--page-padding));
+        padding-left: calc(var(--page-padding));
+        padding-right: calc(var(--page-padding));
     }
 
     .posts {
-        width: 50.78vw; /*390px при ширине экрана 768*/
+        width: 100%;
+        margin-right: 4.43vw; /* 34px при 768vw экрана */
     }
 
     .sidebar {
@@ -1351,6 +1349,7 @@ body {
     :root {
         --page-padding: 15px;
         --desktop-width: 1200px;
+        --header-margin-top: 25px;
     }
 
     .popup-close {
@@ -1364,7 +1363,6 @@ body {
 
     .header {
         min-height: 440px;
-        padding-top: 25px;
     }
 
     .header:before {
@@ -1375,7 +1373,6 @@ body {
         max-width: calc(var(--desktop-width));
         display: flex;
         justify-content: space-between;
-        align-items: center;
         width: 100%;
     }
 
@@ -1435,13 +1432,16 @@ body {
         margin-top: 50px;
         padding-left: calc(var(--page-padding));
         padding-right: calc(var(--page-padding));
-        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
 
+    .post-image-container {
+        width: 50%;
+    }
+
     .post-image {
-        width: 380px;
+        width: 100%;
     }
 
     .sidebar {
@@ -1451,6 +1451,10 @@ body {
 
     .post-separator {
         display: none;
+    }
+
+    .posts {
+        width: 760px;
     }
 
     .post {
@@ -1463,7 +1467,7 @@ body {
 
     .post-text {
         margin-left: 30px;
-        width: 350px;
+        width: calc(50% - 30px);
     }
 
     .shop-items {
