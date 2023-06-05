@@ -1298,7 +1298,7 @@ body {
 
     .posts {
         width: 100%;
-        margin-right: 4.43vw; /* 34px при 768vw экрана */
+        margin-right: 34px;
     }
 
     .sidebar {
