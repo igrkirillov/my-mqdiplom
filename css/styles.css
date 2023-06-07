@@ -1562,15 +1562,15 @@ body {
     }
 
     .shop-item {
-        width: 33.3333%;
+        width: calc(33.3333% - 4*32px/3);
     }
 
     .shop-item:nth-child(n+2) {
-        padding-left: 32px;
+        margin-left: 32px;
     }
 
     .shop-item:nth-child(-n+2) {
-        padding-right: 32px;
+        margin-right: 32px;
     }
 
     .shop-item-image {
