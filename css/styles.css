@@ -27,9 +27,6 @@
 
 body {
     font-family: OpenSans, Areal, sans-serif;
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*align-items: stretch;*/
 }
 
 .hidden {
@@ -867,9 +864,6 @@ body {
     padding-right: calc(var(--page-padding));
     margin-left: auto;
     margin-right: auto;
-}
-
-.address {
 }
 
 .social-items {
