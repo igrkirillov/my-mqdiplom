@@ -88,6 +88,7 @@ body {
 
 .menu_item {
     list-style-type: none;
+    font-weight: 400;
 }
 
 .menu_item:nth-child(n + 2) {
@@ -1123,6 +1124,11 @@ body {
         display: none;
     }
 
+    .menu_item {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
     .header {
         flex-direction: column;
         justify-content: start;
@@ -1186,6 +1192,11 @@ body {
         padding-right: calc(var(--page-padding));
     }
 
+    .news-title {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
     .post:nth-child(n+2) {
         margin-top: 34px;
     }
@@ -1198,8 +1209,33 @@ body {
         margin-top: 44px;
     }
 
+    .shop-items-title {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
     .shop-item:nth-child(n+2) {
         margin-top: 58px;
+    }
+
+    .search-input {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .subscription-title {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .tags-title {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .themes-title {
+        font-size: 16px;
+        font-weight: 700;
     }
 
     .footer {
@@ -1248,6 +1284,11 @@ body {
         display: none;
     }
 
+    .menu_item {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
     .title {
         width: 615px;
         margin-top: 80px;
@@ -1286,6 +1327,7 @@ body {
 
     .trend-title {
         font-size: 17px;
+        font-weight: 700;
     }
 
     .posts-sidebar {
@@ -1294,6 +1336,11 @@ body {
         margin-top: 50px;
         padding-left: calc(var(--page-padding));
         padding-right: calc(var(--page-padding));
+    }
+
+    .news-title {
+        font-size: 14px;
+        font-weight: 700;
     }
 
     .posts {
@@ -1318,6 +1365,11 @@ body {
         margin-top: 50px;
     }
 
+    .shop-items-title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
     .shop-items-container {
         display: flex;
         flex-wrap: wrap;
@@ -1337,6 +1389,26 @@ body {
 
     .shop-item:nth-child(n+3) {
         margin-top: 58px;
+    }
+
+    .search-input {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .subscription-title {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .tags-title {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .themes-title {
+        font-size: 14px;
+        font-weight: 700;
     }
 
     .footer {
@@ -1376,6 +1448,10 @@ body {
         width: 100%;
     }
 
+    .menu_item {
+        font-size: 13px;
+    }
+
     .burger {
         display: none;
     }
@@ -1392,7 +1468,6 @@ body {
         width: 700px;
         margin-top: 124px;
         font-size: 45px;
-        align-self: center;
     }
 
     .trends-container {
@@ -1475,6 +1550,10 @@ body {
         margin-top: 50px;
     }
 
+    .shop-items-title {
+        font-size: 20px;
+    }
+
     .shop-items-container {
         display: flex;
         flex-wrap: wrap;
@@ -1497,6 +1576,31 @@ body {
     .shop-item-image {
         height: 204px;
         object-fit: cover;
+    }
+
+    .news-title {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .search-input {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .subscription-title {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .tags-title {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .themes-title {
+        font-size: 14px;
+        font-weight: 700;
     }
 
     .footer {
