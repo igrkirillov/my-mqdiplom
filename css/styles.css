@@ -365,11 +365,17 @@ body {
     color: black;
 }
 
-.post-separator {
+.post:after {
+    content: "";
+    display: block;
     width: 100%;
     height: 3px;
     margin-top: 20px;
     background-color: #eeeeee;
+}
+
+.post:last-child:after {
+    display: none;
 }
 
 /*posts end*/
@@ -774,7 +780,7 @@ body {
 
 .shop-item-text {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     margin-top: -28px;
     padding: 0 20px;
     border: rgba(181,159,91,0.6) solid 3px;
@@ -922,13 +928,14 @@ body {
 .popup-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     left: 0;
     top: 0;
-    z-index: 0;
+    z-index: 1;
 }
 
 .popup-container:before {
@@ -946,7 +953,7 @@ body {
 }
 
 .popup {
-    margin: 0 var(--page-padding);
+    position: relative;
     background-color: white;
     padding: 30px 24px;
 }
@@ -970,6 +977,9 @@ body {
 }
 
 .popup-close {
+    position: absolute;
+    top: calc(-28px - 10px);
+    right: 0;
     -webkit-appearance: none;
     -moz-appearance:none;
     width: 28px;
@@ -978,9 +988,7 @@ body {
     background-image: url("../svg/form-x.svg");
     background-size: contain;
     border: none;
-    align-self: end;
-    margin-left: var(--page-padding);
-    margin-right: var(--page-padding);
+    z-index: 5;
 }
 
 .feedback-input-row {
@@ -1080,7 +1088,6 @@ body {
 }
 
 .feedback-submit {
-    align-self: center;
     height: 45px;
     width: 100%;
     font-size: 14px;
@@ -1101,9 +1108,12 @@ body {
         --header-margin-top: 32px;
     }
 
+    .popup {
+        width: 330px;
+    }
+
     .popup-close {
-        margin-top: 24px;
-        margin-bottom: 5px;
+        top: calc(-28px - 5px);
     }
 
     .popup-title {
@@ -1244,9 +1254,8 @@ body {
         --header-margin-top: 46px;
     }
 
-    .popup-close {
-        margin-top: 200px;
-        margin-bottom: 7px;
+    .popup {
+        width: 390px;
     }
 
     .popup-title {
@@ -1418,9 +1427,8 @@ body {
         --header-margin-top: 25px;
     }
 
-    .popup-close {
-        margin-top: 210px;
-        margin-bottom: 7px;
+    .popup {
+        width: 390px;
     }
 
     .popup-title {
@@ -1518,7 +1526,7 @@ body {
         max-width: 272px;
     }
 
-    .post-separator {
+    .post:after {
         display: none;
     }
 
