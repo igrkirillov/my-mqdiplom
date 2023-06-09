@@ -1185,10 +1185,11 @@ body {
         margin-bottom:18px;
         margin-left: calc(var(--page-padding));
         margin-right: calc(var(--page-padding));
+        padding: 0 20px;
     }
 
     .trend-title {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .posts-sidebar {
@@ -1233,7 +1234,7 @@ body {
     }
 
     .tags-title {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 700;
     }
 
@@ -1244,6 +1245,29 @@ body {
 
     .footer {
         margin-top: 42px;
+    }
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+    .trends-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .trend {
+        width: calc(50% - 2px);
+    }
+
+    .trend:nth-child(2n+1) {
+        margin-right: 2px;
+    }
+
+    .trend:nth-child(2n) {
+        margin-left: 2px;
+    }
+
+    .trend:nth-child(n+3) {
+        margin-top: 4px;
     }
 }
 
@@ -1301,26 +1325,11 @@ body {
     .trends-container {
         display: flex;
         flex-wrap: wrap;
+        margin-top: 18px;
     }
 
     .trends-title {
         font-size: 18px;
-    }
-
-    .trend {
-        width: calc(50% - 2px);
-    }
-
-    .trend:nth-child(2n+1) {
-        margin-right: 2px;
-    }
-
-    .trend:nth-child(2n) {
-        margin-left: 2px;
-    }
-
-    .trend:nth-child(n+3) {
-        margin-top: 4px;
     }
 
     .trend-info {
@@ -1349,11 +1358,13 @@ body {
     .posts {
         width: 100%;
         margin-right: 34px;
+        margin-top: 0;
     }
 
     .sidebar {
         min-width: 272px;
         max-width: 272px;
+        margin-top: 0;
     }
 
     .post:nth-child(n+2) {
@@ -1416,6 +1427,38 @@ body {
 
     .footer {
         margin-top: 50px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
+    .trend {
+        width: calc(50% - 2px);
+    }
+
+    .trend:nth-child(2n+1) {
+        margin-right: 2px;
+    }
+
+    .trend:nth-child(2n) {
+        margin-left: 2px;
+    }
+
+    .trend:nth-child(n+3) {
+        margin-top: 4px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
+    .trend {
+        width: calc(25% - 3px);
+    }
+
+    .trend:nth-child(n+2) {
+        margin-left: 2px;
+    }
+
+    .trend:nth-child(-n+3) {
+        margin-right: 2px;
     }
 }
 
