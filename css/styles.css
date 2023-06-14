@@ -1121,7 +1121,11 @@ body {
     }
 
     .menu {
-        justify-content: space-between;
+        justify-content: end;
+    }
+
+    .menu_list {
+        display: none;
     }
 
     .menu_item:nth-child(-n+2) {
